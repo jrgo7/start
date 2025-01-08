@@ -1,105 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    color: #FFEFFF;
-
-    font-family: "Gowun Batang", serif;
-    font-weight: 700;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 html {
-    background-color: #9e875d;
-    background-image: url('texture.bmp');
-}
+    background: url("夢の中でもお勉強？.png") no-repeat center center fixed; 
+    background-color: black;
+    color: white;
+    font-family: "JetBrains Mono", "Inter", sans-serif;
+    font-optical-sizing: auto;
+} 
 
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80vw;
+    max-width: 1366px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    background-color: #00000080;
+    margin: 8px;
     padding: 16px;
-}
-
-div#search {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-span#title {
-    margin-top: 2vh;
-    font-weight: bold;
-    font-size: x-large;
-    text-align: center;
-}
-
-form {
-    margin-top: 2vh;
-}
-
-input[type="text"] {
-    width: 60vw;
-    padding: 12px;
-    margin: 12px;
-    text-align: center;
-    font-size: x-large;
-    border: 2px solid #FFEFFF;
-    border-left: none;
-    border-right: none;
-    /* background-color: #9e875d; */
-    background: none;
-    outline: none;
-    box-sizing: border-box;
 }
 
 nav {
     display: flex;
-    margin-top: 4vh;
-    align-items: start;
     flex-wrap: wrap;
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 12px;
+}
+
+hgroup {
+    margin: 8px;
+    padding: 16px;
+    width: calc(33.33% - 16px);
+    box-sizing: border-box;
+    background-color: #00000080;
 }
 
 ul {
     list-style-type: none;
-    padding-right: 4%;
-    padding-bottom: 2vh;
-    flex: 1;
-}
-
-li:first-child {
-    font-weight: bold;
-    font-size: larger;
-    padding-right: 4%;
-    padding-bottom: 1vh;
+    padding-left: 0px;
 }
 
 li {
-    font-size: large;
+    font-size: larger;
+    margin: 0 0 8px;
 }
 
 a {
-    display: inline-block;
-    border: 2px solid #FFEFFF;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    width: 100%;
-    height: 100%;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    padding-left: 1vw;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    background-color: #00000080;
+    color: white;
 }
+
+
+a:visited {
+    color: white;
+}
+
 a:hover {
-    color: #ffbbbb;
+    color: lightpink;
+    background-color: #86868680;
 }
+
