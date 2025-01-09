@@ -4,7 +4,7 @@ html {
     background: url("夢の中でもお勉強？.png") no-repeat center center fixed; 
     background-color: black;
     color: white;
-    font-family: "JetBrains Mono", "Inter", sans-serif;
+    font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
 } 
 
@@ -32,6 +32,13 @@ hgroup {
     box-sizing: border-box;
     background-color: #00000080;
 }
+
+@media (max-width: 1080px) {
+    hgroup {
+        width: calc(50% - 16px);
+    }
+}
+
 
 ul {
     list-style-type: none;
